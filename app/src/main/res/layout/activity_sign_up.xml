@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:src="@drawable/movie" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:gravity="center"
+            android:padding="50dp"
+            android:text="World Cinema"
+            android:textColor="@color/blabl"
+            android:textSize="25dp"></TextView>
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Имя"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/surName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Фамилия"
+            android:layout_margin="10dp"
+            />
+        <EditText
+            android:id="@+id/eMail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="E-mail"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Пароль"
+            android:layout_margin="10dp"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:onClick="logIn"
+            android:text="Войти"
+            android:textColor="@color/white"
+            android:background="@color/fon"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:text="Есть аккаунт"
+            android:onClick="haveAcount"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
